@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto+Mono:wght@500&display=swap');
 :root{
     
@@ -57,11 +57,6 @@ body {
     display: flex;
 }
 
-.grid2-subitem-1{
-  width: 50%;
-  background-color: aqua;
-}
-
 
 
 .grid2-item-2{
@@ -74,16 +69,7 @@ body {
 /* Swiper js */
 
 
-.swiper-slide{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* box-sizing: border-box;  */
-  
-    /* Remove any padding or margin that might affect sizing */
-    /* padding: 0;
-    margin: 0; */
-}
+
 .swiper-slide img{
     width: 100%;
     height: 100%;
@@ -97,7 +83,22 @@ body {
     overflow: hidden;
     position: relative;
   }
+
+
   
+  
+.grid2-subitem-1{
+  width: 50%;
+  
+  
+}
+.grid2-subitem-2{
+  width: 50%;
+  background-color: aqua;
+  
+}
+
+
   /* .image_slider .swiper-wrapper {
     animation: scrollImages 20s linear infinite; 
   } */
@@ -153,6 +154,50 @@ ul {
   list-style: none; /* Remove the default dot */
   margin-bottom: 30px;
 }
+
+.card{
+  border:3px;
+  border-color: aliceblue;
+  height: 100% ;
+  width: 100%;
+}
+
+ .card-img{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+ .card-wrapper{
+  padding-top: 2.5rem;
+  padding-left: 30px;
+  display: flex;
+  
+  /* padding: 10px; */
+}
+
+.card-name{
+   font-size: small;
+   padding-left: 1rem;
+   margin-top: 2px;
+}
+.card-name .degree{
+  font-size: small;
+  font-weight: lighter;
+  color: rgb(126, 128, 128);
+  
+}
+
+.des{
+  
+  font-size: small;
+  font-weight: lighter;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  
+}
+
+
 
 @media (max-width: 768px) {
  
