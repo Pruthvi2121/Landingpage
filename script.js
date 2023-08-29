@@ -34,3 +34,18 @@ var swiper2 = new Swiper(".cards_slider", {
     
     pauseOnInteraction: false
   });
+
+
+
+  const menu = document.getElementById('menu')
+  const sm_nav = document.querySelector('.sm-nav')
+  menu.onclick = function(){
+      sm_nav.classList.toggle('active')
+      if(sm_nav.classList.contains('active')){
+        menu.innerText = 'Close'
+      }
+      else{
+        menu.innerText = 'Menu'
+      }
+      
+  }
