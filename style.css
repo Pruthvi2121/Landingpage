@@ -60,11 +60,54 @@ body {
 
 
 .grid2-item-2{
+    position: relative;
     background-color: rgb(122, 171, 124);
-    background-image: url("https://img.freepik.com/premium-photo/anime-style-game-scene-modeling-rendering-illustration-sakura-house-wallpaper-background-ai-generate_859483-6172.jpg");
+    background-image: url("https://img.freepik.com/premium-photo/poster-theater-called-exit-movie-theater_662214-91275.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 50%;
+    
+}
+.grid2-item-2::before  {
+  content: ""; /* Create a pseudo-element to act as an overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 27, 27, 0.674); /* Semi-transparent gray */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Add transition for smooth fade-in */
+
+}
+.hover-text{
+    position: absolute;
+    right: 2rem;
+    font-size:xx-large ;
+    font-weight: bold;
+    bottom:1rem;
+    left: 4rem; 
+    color: rgb(251, 251, 251); 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.hover-text h5{
+  font-size:medium ;
+  color: rgb(251, 251, 251); 
+  font-weight: lighter;
+  padding-left: 4px;
+
 }
 
+.grid2-item-2:hover  .hover-text {
+  opacity: 1;
+  filter: brightness(0.7);
+  
+}
+.grid2-item-2:hover::before {
+  opacity: 1; /* Show the overlay on hover */
+}
 
 /* Swiper js */
 
