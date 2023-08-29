@@ -129,7 +129,9 @@ a{
     height: 100vh;
     display: grid;
     overflow: hidden;
+    
     position: relative;
+    z-index: 2;
   }
 
 
@@ -137,10 +139,13 @@ a{
   
 .grid2-subitem-1{
   width: 50%;
+
   
   
 }
 .grid2-subitem-2{
+  position: relative;
+  z-index: 2;
   width: 100%;
   background-color: rgb(67, 61, 181);
   
@@ -303,6 +308,8 @@ display: none;
     
 }
 
+
+
 @media (max-width: 768px) {
  
   .main-grid-container{
@@ -347,5 +354,11 @@ display: none;
   display: block;
 }
 
+.hover-text{
+  font-size: larger;
+  right: 1rem;
+  left: 1rem; 
+  
+}
 
 }
