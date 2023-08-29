@@ -26,6 +26,11 @@ body {
     
 }
 
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
 .main-grid-container{
     display: flex;
     background-color: black;
@@ -163,14 +168,19 @@ body {
 
 
   /* nav */
+  .t-hover:hover{
+    color: rgba(239, 242, 245, 0.632);
+    /* transform: ; */
+  }
 
   nav{
     color: aliceblue;
-    position: absolute;
+    position: fixed;
     left: 3rem;
     top: 2rem;
-    z-index: 1;
+    z-index: 3;
     height: 92%;
+    
     
     
     display: flex;
@@ -251,10 +261,8 @@ display: none;
     display: none;
     /* right: 3rem;
     top: 2rem; */
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
-    
-  
 }
 .icon{
   height: 2px;
@@ -270,13 +278,12 @@ display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(28, 27, 27, 0.674); /* Semi-transparent gray */
-  transition: 0.3s; /* Add transition for smooth fade-in */
+  transition: 0.4s; /* Add transition for smooth fade-in */
   opacity: 1;
+  display: block;
 }
 
-.active::after{
-    color: aqua;
-}
+
 
  #menu{
   position: absolute;
@@ -288,12 +295,14 @@ display: none;
 
 .sm-nav{
   padding-left: 3rem;
+  padding-right: 14rem;
   padding-top: 10rem;
   text-align: left;
   font-size:xx-large ;
   display: flex;
-
+    
 }
+
 @media (max-width: 768px) {
  
   .main-grid-container{

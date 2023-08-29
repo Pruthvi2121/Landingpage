@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+    <nav>
+        <h1>PicMaker.</h1>
+        <ul class="sm-hide">
+            <li ><a  href="work.html"> Work</a></li>
+            <li ><a  href="service.html"> Services</a></li>
+            <li ><a  href="about.html"> About</a></li>
+            <li ><a  href="contact.html">Contact</a></li>
+        </ul>
+        <h5>©2023 PicMaker</h5>
+    </nav>
+    <!-- mobil -->
+    <span id="menu" class="lg-hide lg-hide" >Menu</span>
+     <div class="sm-nav ">
+        
+         <div class="sm-nav-item">
+            <div>
+                <ul>
+                    <li class="t-hover"><a  href="work.html"> Work</a></li>
+                    <li class="t-hover"><a  href="service.html"> Services</a></li>
+                    <li class="t-hover"><a  href="about.html"> About</a></li>
+                    <li class="t-hover"> <a  href="contact.html">Contact</a></li>
+                </ul>
+                
+            </div>
+
+         </div>
+    </div>
+
+        <main class="main-container">
+            <div class="">
+                <h1>About us</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero iure doloribus expedita ea sint nesciunt?</p>
+
+                 <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia quaerat, iste aspernatur id molestiae et sapiente quas similique corporis deserunt commodi maxime nesciunt ipsam in alias officia voluptas odio ab explicabo fugiat ratione sed. Nemo quia, ex cumque autem perferendis consequuntur itaque repudiandae excepturi velit? Eveniet nemo beatae quae vitae facilis eum aperiam officia omnis tempore veritatis quibusdam magni blanditiis natus, quo, commodi totam at eaque! Aut excepturi accusantium suscipit nostrum facilis omnis cum</div>
+            </div>
+           
+         </main>
+
+         
+         
+</body>
+<script >
+    const menu = document.getElementById('menu')
+  const sm_nav = document.querySelector('.sm-nav')
+  menu.onclick = function(){
+      sm_nav.classList.toggle('active')
+      if(sm_nav.classList.contains('active')){
+        menu.innerText = 'Close'
+        menu.style = 'color:red;'
+        sm_nav.style = 'z-index:3;'
+        
+      }
+      else{
+        menu.innerText = 'Menu'
+        sm_nav.style = 'z-index:2;'
+        menu.style = 'color:white'
+      }
+      
+  }
+</script>
+</html>

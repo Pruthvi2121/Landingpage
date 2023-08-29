@@ -43,9 +43,14 @@ var swiper2 = new Swiper(".cards_slider", {
       sm_nav.classList.toggle('active')
       if(sm_nav.classList.contains('active')){
         menu.innerText = 'Close'
+        menu.style = 'color:red;'
+        sm_nav.style = 'z-index:3;'
+        
       }
       else{
         menu.innerText = 'Menu'
+        sm_nav.style = 'z-index:2;'
+        menu.style = 'color:white'
       }
       
   }
