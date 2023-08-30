@@ -145,11 +145,41 @@ a{
 }
 .grid2-subitem-2{
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
-  background-color: rgb(67, 61, 181);
+  background-color: #161616;
   
 }
+
+.wrap{
+  position: absolute;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 2rem;
+  font-weight: lighter;
+  
+}
+
+
+
+/* Add border and customize styles for the bordered button */
+.btn2 {
+  text-align: center;
+  border: 2px solid #f1f3f6; /* You can change the color code to your desired border color */
+  border-radius: 5px;
+  background-color: transparent;
+  color: #eef3f8; /* You can change the color code to your desired text color */
+  transition: background-color 0.3s, color 0.3s;
+  width: fit-content;
+  padding: 1rem;
+}
+.btn2:hover{
+  background-color: #28282896;
+}
+
 
 
   /* .image_slider .swiper-wrapper {
@@ -178,6 +208,8 @@ a{
     /* transform: ; */
   }
 
+
+
   nav{
     color: aliceblue;
     position: fixed;
@@ -185,22 +217,17 @@ a{
     top: 2rem;
     z-index: 3;
     height: 92%;
-    
-    
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
- 
-    
-    
   }
 
 nav h1{
   font-family:'Caveat', sans-serif ;
   font-size: xx-large;
   transform: rotate(-10deg); 
+  
   
 }
 nav ul li{
@@ -308,6 +335,13 @@ display: none;
     
 }
 
+
+.social span svg{
+  height: 1.5rem;
+  width:  1.5rem;
+  text-align: center;
+  
+}
 
 
 @media (max-width: 768px) {

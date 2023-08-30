@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <h1>THis is contact page</h1>
+    
+    <nav>
+        <h1><a href="/">PicMaker.</a></h1>
+        <ul class="sm-hide">
+            <li ><a  href="work.html"> Work</a></li>
+            <li ><a  href="service.html"> Services</a></li>
+            <li ><a  href="about.html"> About</a></li>
+            <li ><a  href="contact.html">Contact</a></li>
+        </ul>
+        <h5>©2023 PicMaker</h5>
+    </nav>
+    <!-- mobil -->
+    <span id="menu" class="lg-hide lg-hide" >Menu</span>
+     <div class="sm-nav ">
+        
+         <div class="sm-nav-item">
+            <div>
+                <ul>
+                    <li class="t-hover"><a  href="work.html"> Work</a></li>
+                    <li class="t-hover"><a  href="service.html"> Services</a></li>
+                    <li class="t-hover"><a  href="about.html"> About</a></li>
+                    <li class="t-hover"> <a  href="contact.html">Contact</a></li>
+                </ul>
+                
+            </div>
+
+         </div>
+    </div>
+
+        <main class="main-grid">
+            <div class="grid-item-1 sm-hide">
+                
+            </div>
+
+            <div class="grid-item-2">
+                <div class="c-width">
+                    <h1>Contact</h1>
+                    <p>Reach out to us to share your feedback, inquiries, or suggestions.</p>
+                    <!-- <h5>SEND MESSAGE</h5> -->
+
+                    <form action="submit.php" method="post">
+                        <div class="split">
+                            <input class="form-item" type="text" placeholder="Name">
+                            <input class="form-item" type="email" placeholder="Email">
+                        </div>
+                        <div>
+                            <textarea class="form-item" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <button class="form-item btn">Send.</button>
+                    </form>
+                     
+                </div>
+            </div>
+            
+           
+         </main>
+
+         
+         
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </html>

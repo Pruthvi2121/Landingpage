@@ -54,3 +54,12 @@ var swiper2 = new Swiper(".cards_slider", {
       }
       
   }
+
+const gridItem = document.querySelector('.grid-item-1');
+const image = new Image();
+image.src = "https://www.pixel4k.com/wp-content/uploads/2018/11/japan-landscape-vector-minimalist-4k_1541970815.jpg";
+
+image.addEventListener('load', () => {
+    gridItem.style.backgroundImage = `url(${image.src})`;
+    gridItem.classList.add('loaded'); // Add the "loaded" class to show the image with fade-in
+});
