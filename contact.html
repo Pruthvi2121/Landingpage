@@ -48,10 +48,10 @@
                     <p>Reach out to us to share your feedback, inquiries, or suggestions.</p>
                     <!-- <h5>SEND MESSAGE</h5> -->
 
-                    <form action="submit.php" method="post">
+                    <form action="" method="post" onsubmit="handlesubmit(); return false;">
                         <div class="split">
-                            <input class="form-item" type="text" placeholder="Name">
-                            <input class="form-item" type="email" placeholder="Email">
+                            <input class="form-item" type="text" placeholder="Name" required>
+                            <input class="form-item" type="email" placeholder="Email" required>
                         </div>
                         <div>
                             <textarea class="form-item" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
@@ -68,6 +68,12 @@
          
          
 </body>
+<script>
+   const handlesubmit = ()=>{
+
+         window.location.href = "thankyou.html";
+   }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </html>

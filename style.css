@@ -23,6 +23,7 @@ body {
     font-family:'Poppins', sans-serif ;
     background:var(--primarycolor--);
     transition: all 0.3s ease-in-out;
+    background-color: black;
     
 }
 
@@ -33,7 +34,7 @@ a{
 
 .main-grid-container{
     display: flex;
-    background-color: black;
+    
     position: relative;
     z-index: 0;
   
@@ -67,7 +68,7 @@ a{
 .grid2-item-2{
     position: relative;
     background-color: rgb(122, 171, 124);
-    background-image: url("https://img.freepik.com/premium-photo/poster-theater-called-exit-movie-theater_662214-91275.jpg");
+    background-image: url("/images/contact.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -343,6 +344,16 @@ display: none;
   
 }
 
+.thanks{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  gap: 2rem;
+
+}
+
 
 @media (max-width: 768px) {
  
@@ -360,6 +371,12 @@ display: none;
       height: 31vh;
     }
 
+    .btn2{
+      padding: 0.2rem;
+    }
+    .wrap{
+      font-size: small;
+    }
     
 .grid2-item-1{
   background-color: #161616;
@@ -371,6 +388,7 @@ display: none;
 .grid2-item-2{
   width: 50%;
   height: auto;
+  z-index: 4;
 }
    
 .grid2-subitem-1{
@@ -394,5 +412,9 @@ display: none;
   left: 1rem; 
   
 }
+.thanks{
+  padding: 5rem;
+}
 
 }
+
