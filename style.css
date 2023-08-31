@@ -154,13 +154,13 @@ a{
 
 .wrap{
   position: absolute;
-  padding: 2px;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
   padding: 2rem;
   font-weight: lighter;
+  
   
 }
 
@@ -393,6 +393,10 @@ display: none;
    
 .grid2-subitem-1{
   display: none;
+}
+
+.grid2-subitem-2{
+  z-index: 2;
 }
 
 .sm-nav{
